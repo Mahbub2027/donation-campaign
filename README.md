@@ -1,8 +1,11 @@
 ## Project Features
 
-#### &bull; User Registration and Authentication 
-#### &bull; Donation Forms 
-#### &bull; Feedback and Contact Forms 
+#### &bull; Donation Category 
+Donar can easily understand the various causes or projects they can support through categorized donations. 
+#### &bull; Search
+In the search box donar can easily find the projects where he want to donate. 
+#### &bull; Statistics
+Here donar can easily show his donation percentages. 
 
 
 
