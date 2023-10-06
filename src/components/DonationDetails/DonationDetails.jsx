@@ -1,5 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveDonationFund } from "../utility/localstorage";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const DonationDetails = () => {
 
@@ -11,6 +13,8 @@ const DonationDetails = () => {
 
     const handleDonation =() => {
         saveDonationFund(IntId);
+        toast.success("You Successfully Donate")
+        
     }
 
     return (
@@ -20,6 +24,7 @@ const DonationDetails = () => {
                 <img className="w-full h-96" src={category.image} alt="" />
                 <div className="">
                 <button onClick={handleDonation} className="px-4 py-1 text-white absolute bottom-6 left-6" style={{backgroundColor: category.text_bg}}>Donate ${category.price}</button>
+                <ToastContainer />
                 </div>
             </div>
 
