@@ -9,13 +9,11 @@ const DonationCategories = () => {
     .then(res => res.json())
     .then(data => setCategories(data));
 
-    const handleDonationCategories = () =>{
-        
-    }
+    
 
 
     return (
-        <div onClick={}>
+        <div >
             {/* <h1>Donation Categories: {categories.length}</h1> */}
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-14 rounded-md">
