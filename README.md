@@ -1,8 +1,8 @@
 ## Project Features
 
-#### & User Registration and Authentication 
-#### & Donation Forms 
-#### & Feedback and Contact Forms 
+#### &bull; User Registration and Authentication 
+#### &bull; Donation Forms 
+#### &bull; Feedback and Contact Forms 
 
 
 
