@@ -1,13 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Category from "../Category/Category";
+// import { useLoaderData } from "react-router-dom";
 
-const DonationCategories = () => {
+const DonationCategories = ({categories}) => {
 
-    const [categories, setCategories] = useState([]);
+    // const [categories, setCategories] = useState([]);
 
-    fetch('category.json')
-    .then(res => res.json())
-    .then(data => setCategories(data));
+    // fetch('category.json')
+    // .then(res => res.json())
+    // .then(data => setCategories(data));
 
     
 

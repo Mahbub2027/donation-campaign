@@ -8,13 +8,13 @@ const DonationDetails = () => {
     const categories = useLoaderData();
     const {id} = useParams();
     const IntId = parseInt(id);
-    const category = categories.find(category=> category.id === IntId);
+    const category = categories.find(category=> category.id == IntId);
     console.log(category);
 
     const handleDonation =() => {
+ 
         saveDonationFund(IntId);
-        toast.success("You Successfully Donate")
-        
+        toast.success("You Successfully Donate") 
     }
 
     return (
@@ -22,8 +22,8 @@ const DonationDetails = () => {
             {/* <h2>Donation Details</h2> */}
             <div className="relative my-10 mx-1">
                 <img className="w-full h-96" src={category.image} alt="" />
-                <div className="">
-                <button onClick={handleDonation} className="px-4 py-1 text-white absolute bottom-6 left-6" style={{backgroundColor: category.text_bg}}>Donate ${category.price}</button>
+                <div className="text-white absolute bottom-0 p-8 bg-slate-700 w-full bg-opacity-40">
+                <button onClick={handleDonation} className="px-4 py-2 rounded-lg " style={{backgroundColor: category.text_bg}}>Donate ${category.price.toFixed(2)}</button>
                 <ToastContainer />
                 </div>
             </div>
