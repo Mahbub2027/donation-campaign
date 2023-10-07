@@ -5,13 +5,13 @@ const Navbar = () => {
     const links = <>
         <NavLink to="/" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-red-500 underline font-bold" : ""
-            }><li><a>Home</a></li></NavLink>
+            }><li><a className="font-semibold">Home</a></li></NavLink>
         <NavLink to="/donation" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-red-500 underline font-bold" : ""
-            }><li><a>Donation</a></li></NavLink>
+            }><li><a className="font-semibold">Donation</a></li></NavLink>
         <NavLink to='/statistics' className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-red-500 underline font-bold" : ""
-            }><li><a>Statistics</a></li></NavLink>
+            }><li><a className="font-semibold">Statistics</a></li></NavLink>
     </>
     return (
         <div>

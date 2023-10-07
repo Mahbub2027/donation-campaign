@@ -5,7 +5,7 @@ const Category = ({ category }) => {
 
     
     return (
-        <div>
+        <div className="mx-auto">
             <Link to={`/category/${id}`}>
                 <img className="w-72 h-40" src={image} alt="" />
                 <div className="p-3 w-72 lg:w-full" style={{ backgroundColor: card_bg }}>
